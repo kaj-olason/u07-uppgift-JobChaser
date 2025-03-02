@@ -36,9 +36,7 @@ export default function Home() {
     return (
       jobs.job_type.includes(jobFilter.jobType) &&
       jobs.category.includes(jobFilter.jobCategory) &&
-      jobs.category
-        .toUpperCase()
-        .includes(jobFilter.jobFreeSearch.toUpperCase())
+      jobs.title.toUpperCase().includes(jobFilter.jobFreeSearch.toUpperCase())
     );
   });
 
@@ -55,7 +53,7 @@ export default function Home() {
         <input
           id="place"
           type="text"
-          placeholder="Search by Categories"
+          placeholder="Search by Title"
           value={jobFilter.jobFreeSearch}
           onChange={(e) => dispatch(updateFreeSearch(e.target.value))}
           className="border border-slate-500 rounded-md w-[200px] pl-2"
