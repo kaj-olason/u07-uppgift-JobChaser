@@ -24,10 +24,10 @@ export default function Home() {
   console.log(data);
 
   const category = data?.jobs.map((item) => item.category);
-  let deduped = Array.from(new Set(category));
+  const deduped = Array.from(new Set(category));
 
   const jobType = data?.jobs.map((item) => item.job_type);
-  let dedupedJobType = Array.from(new Set(jobType));
+  const dedupedJobType = Array.from(new Set(jobType));
 
   const dispatch = useDispatch();
   const jobFilter = useSelector((state: RootState) => state.jobFilter);
