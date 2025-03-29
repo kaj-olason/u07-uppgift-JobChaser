@@ -16,3 +16,27 @@ Jag hade även med hämtning av företagens respektive loggo, men det gick för 
 ## Preview
 
 Du kan se min job chaser sajt på [följande sida](https://u07-uppgift-job-chaser.vercel.app/)
+
+## Frågor & Svar (teoretiska uppgiften)
+
+### Vecka 1
+**Allmänt om ramverket React: Hur/Varför uppkom det? Vad är centralt i React?**  
+React uppkom 2011 av företaget Meta som utvecklade Facebook feed med detta komponents-baserande javascript bibliotek. 2012 inplementerades det även på Instagram och 2013 släpptes det som open scource. React är dels uppbyggt på Single-Page Applications (SPAs), vilket gör att webbsidor behöver inte laddas om som det gamla traditionella sättet att bygga webbsidor på. React är dessutom såkallat komponentbaserat, där stil, funktionallitet och struktur lever samman i en komponent (pusselbit), vilket gör att det blir mycket lättare att återanvända kod och funktion.
+
+**Vad är JSX?**  
+Det är ett syntax-tillägg till javascript, som gör det möjligt att ha både uppmärkning och logik i samma komponentsfil i React.
+
+**Vad är en komponent?**  
+Stil, funktionallitet och struktur lever samman i en komponents-fil (pusselbit), vilket gör att det blir mycket lättare att återanvända kod och funktion.
+
+**Vad är props?**  
+Man komunisererar data mellan react componenter via props.
+
+**Vad menas med one-way-dataflow?**  
+Det menas att data i react applikation födar bara åt ett håll, från förälder komponent till barn komponent.
+
+**Hur kan man använda sig av konditionell rendering i React?**  
+Konditionell rendering i react fungerar på samma sätt som vilkor i javascript. Du kan använda t.ex if-sats i javascript och renderar komponent beroende av ett state i applikationen.
+
+**Vad menas med en återanvändbar komponent?**  
+Det är en stylad, strukturerad och funktionsmässig "pusselbit" som du kan återanvända hur många gånger du vill i en webbaplikation.
