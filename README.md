@@ -39,4 +39,22 @@ Det menas att data i react applikation födar bara åt ett håll, från föräld
 Konditionell rendering i react fungerar på samma sätt som vilkor i javascript. Du kan använda t.ex if-sats i javascript och renderar komponent beroende av ett state i applikationen.
 
 **Vad menas med en återanvändbar komponent?**  
-Det är en stylad, strukturerad och funktionsmässig "pusselbit" som du kan återanvända hur många gånger du vill i en webbaplikation.
+Det är en stylad, strukturerad och funktionsmässig "pusselbit" som du kan återanvända hur många gånger du vill i en webbaplikation.  
+
+### Vecka 2  
+**Vad är state i React?**  
+Det är ett sätt att lagra data som kan ändras över tid och påverkar hur komponenten renderas.  
+
+**Vad är det för skillnad mellan state och props?**  
+State är data som är dynamisk och kan ändra över tid beroende på interaktionen i applikationen, medans props är data som är flyttbar mellan koponenter.  
+
+**Vad menas med en kontrollerad komponent i React?**  
+State-baserad komponent. T.ex använder du gärna useState i ett formulär input, för att på så vis få full kontroll över inmatningen.  
+
+**Vad är en callback handler?**  
+I javascript är callback function en funktion som används som ett argument i en annan funktion. I react skulle en callback kunna vara en funtion som uppdaterar ett state i useState().  
+
+**Vad menas med "lifting state up"?**  
+Ibland behöver två eller flera child komponenter samma data från parent komponenten, så istället för att skapa individuella state i varje koponent så "lyfter" man istället state till parent komponenten och skickar ned datan som props till child komponenterna.  
+
+**Vad är syftet med useEffect-hook i React?**  
