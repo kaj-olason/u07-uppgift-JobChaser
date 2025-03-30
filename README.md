@@ -58,3 +58,28 @@ I javascript är callback function en funktion som används som ett argument i e
 Ibland behöver två eller flera child komponenter samma data från parent komponenten, så istället för att skapa individuella state i varje koponent så "lyfter" man istället state till parent komponenten och skickar ned datan som props till child komponenterna.  
 
 **Vad är syftet med useEffect-hook i React?**  
+Syfter med useEffect i react är att hantera sidoeffecteri funktionella komponenter. Som att hämnta API eller sätta timers functionalitet. kod i useEffect körs efter att komponenten har renderats.  
+
+**Vad är syftet kring den s.k dependency-arrayen i useEffect?**  
+Sytet är att kontrollera när en viss effekt skall köras. Med tom array körs effekten endast en gång, när komponenten först mountas. Utan array körs useEffekt varje gång komponenten renderas, vilket blir ganska "dyrt".  
+
+### Vecka 3  
+**Vilka fördelar finns det med att använda NextJS? Nackdelar?**  
+**Förelarna** med NextJS är exempelvis att plattformen har ett inbyggt route fil-system, vilket är både gynnssamt för API samt navigering. NextJS är gynnsam för att bygga upp en fullstack application och hela applikationen kan sedan hostas hos Vercel. 
+**Nackdelarna** är att NextJS är ganska komplext, så det kan ta lite tid att lära sig för nybörjare. Viss funktionalitet i NextJS är låst till Vercel, på så vis kan det vara begränsat. NextJS är under ganska så intensiv utveckling, därför kan det krävas tid för att uppdatera sig.  
+
+**Vad menas med Routing? På vilket sätt löser NextJS Routing v.s "vanliga React"?**  
+Routing tar hand om navigeringen i en Singel Page Application (SPA). "Vanlig" react behöver externt bibliotek för att hantera routing, vanligt vis React Routing. Detta är redan inbakat i NextJS fil-struktur.  
+
+**Vad menas med Reacts ekosystem? Nämn några viktiga bibliotek i Reacts ekosystem?**
+React ekosystem syftar man på verktyg, bibliotek och ramverk som ofta används tillsammans med react. Några vanliga är **React Router** som tar hand om navigeringen i react. **Redux** som ger komponenter tillgång till data globalt. **React Hook Form** som hantera formulär på ett smidigt sätt. **NextJS** som är ett ramverk till att bygga webbapplikationer i react.  
+
+**Vad är syftet med useContext? Vilket problem med props löser den?**
+Syftet med useContext är att är att ge komponenter tillgång till delad data, utan att behöva skicka props manuelt genom varje koponentnivå som kallas för "props drilling".  
+
+### Vecka 4  
+**Vad är Redux Toolkit?**  
+Redux Toolkit är ett samling vertyg som gör det smidigare och enklare att handskas med Redux. Redux kan kräva mycket boilerplate-kod, redux-toolkit redicerar detta och gör det enklare. Det blir mindre och renare kod.  
+
+**När, i vilka situationer vill man använda Redux Toolkit?**  
+Man använder Redux Toolkit när man bygger en react-baserad applikation och har behov av ett mer organiserat, förutsägbart och skalbart sätt att hantera global state. Där state management blir för koplext för useState eller useContext.
