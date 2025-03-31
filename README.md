@@ -13,6 +13,12 @@ Jag är glad också hur jag fick till animeringen i listningen av jobb, där var
 Jag upplever fetchning från APIn går lite långsamt, en förbättringspotental skulle kunna vara att bygga in funktionalitet där du endast fetchar 20-30 åt gången.
 Jag hade även med hämtning av företagens respektive loggo, men det gick för långsamt att fetcha då. Själv den koden finns kvar men bort-kommiterad.
 
+## VG - implementation  
+
+Jag har skapat en **light- och darkmode** i applikationen. Detta med hjälp av useContext, som jag gjort en ThemeProvider utav. Jag har även sparat detta local storage, så temat håller sig även när du laddar om sidan.  
+
+Jag valde även att använda mig utav **framer-motion**, ett spännande bibliotek i reacts ekosystem, vilket gör att jobblistan renderas ut med lite snygg animering. 
+
 ## Preview
 
 Du kan se min job chaser sajt på [följande sida](https://u07-uppgift-job-chaser.vercel.app/)
